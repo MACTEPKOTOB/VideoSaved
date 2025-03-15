@@ -88,3 +88,28 @@ video {
     background: #ff1c0a;
     transform: scale(1.1);
 }
+
+.site-title {
+    font-size: 50px;
+    color: #ff8c00;  /* Новый оттенок для названия (оранжевый) */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    animation: titleAnimation 3s ease-in-out infinite alternate;
+}
+
+@keyframes titleAnimation {
+    0% {
+        color: #ff8c00;  /* Оранжевый цвет */
+        transform: scale(1);
+    }
+    50% {
+        color: #f4a261;  /* Легкий пастельный оранжевый */
+        transform: scale(1.1);
+    }
+    100% {
+        color: #ff8c00;  /* Оранжевый цвет */
+        transform: scale(1);
+    }
+}
