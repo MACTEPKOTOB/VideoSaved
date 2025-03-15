@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка и поиск видео</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>📥 Загрузка видео</h1>
+    <form id="uploadForm">
+        <input type="file" id="videoInput" accept="video/*" required>
+        <input type="text" id="tagsInput" placeholder="Введите теги (через запятую)">
+        <button type="submit">⬆️ Загрузить</button>
+    </form>
+
+    <h2>🔍 Поиск видео</h2>
+    <input type="text" id="searchInput" placeholder="Введите тег для поиска">
+    <button onclick="searchVideos()">🔎 Найти</button>
+    
+    <ul id="videoList"></ul>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
