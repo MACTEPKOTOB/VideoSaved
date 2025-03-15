@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Загрузка и поиск видео</title>
+    <title>🎥 ВидеоХранилище</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>📥 Загрузка видео</h1>
+    <!-- Добавляем название сайта сверху -->
+    <h1 class="site-title">🎥 ВидеоХранилище</h1>
+
+    <h2>📥 Загрузка видео</h2>
     <form id="uploadForm">
         <input type="file" id="videoInput" accept="video/*" required>
         <input type="text" id="tagsInput" placeholder="Введите теги (через запятую)">
